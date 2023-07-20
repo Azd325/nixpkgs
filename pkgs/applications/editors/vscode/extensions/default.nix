@@ -2286,6 +2286,23 @@ let
         };
       };
 
+      monosans.djlint = buildVscodeMarketplaceExtension {
+        mktplcRef = {
+          publisher = "monosans";
+          name = "djlint";
+          version = "2023.7.5";
+          sha256 = "sha256-oHuGxC0M52V+AyruDx5YrY2qgp8jFRuMsYrMgRFpnFI=";
+        };
+        meta = {
+          changelog = "https://marketplace.visualstudio.com/items/monosans.djlint/changelog";
+          description = "Visual Studio Code extension for formatting and linting HTML templates";
+          downloadPage = "https://marketplace.visualstudio.com/items?itemName=monosans.djlint";
+          homepage = "https://github.com/monosans/djlint-vscode";
+          license = lib.licenses.mit;
+          maintainers = with lib.maintainers; [ azd325 ];
+        };
+      };
+
       ms-azuretools.vscode-docker = buildVscodeMarketplaceExtension {
         mktplcRef = {
           name = "vscode-docker";
